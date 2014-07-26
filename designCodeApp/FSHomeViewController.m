@@ -1,18 +1,19 @@
 //
-//  _SViewController.m
+//  FSHomeViewController.m
 //  designCodeApp
 //
 //  Created by Giuseppe Grammatico on 25/07/14.
 //  Copyright (c) 2014 Foresite - Giuseppe Grammatico. All rights reserved.
 //
 
-#import "_SViewController.h"
+#import "FSHomeViewController.h"
 
-@interface _SViewController ()
+@interface FSHomeViewController ()
 
 @end
 
-@implementation _SViewController
+@implementation FSHomeViewController
+
 
 - (void)viewDidLoad
 {
@@ -22,17 +23,9 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (IBAction)unwindFromView:(UIStoryboardSegue *)segue{}
 
-- (IBAction)unwindFromView:(UIStoryboardSegue *)segue{
-    
-}
-
-- (UIStatusBarStyle) preferredStatusBarStyle{
+-(UIStatusBarStyle) preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
 
